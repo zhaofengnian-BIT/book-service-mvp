@@ -10,7 +10,10 @@
 
 1. create a repo in github
 2. copy the repo link
-3. in VS Code, run git remote add origin (paste the link here)  
+3. in VS Code, run the following:
+   1. git remote add origin (paste the link here)  
+   2. git branch -M main
+   3. git push -u origin main
 
 after the previous steps, the local folder and the remote repo have been "connected"
 
