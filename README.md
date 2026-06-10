@@ -2,4 +2,4 @@
 
 Learning project following the 200-hour MERN roadmap.
 
-Status: Planning
+Status: Planning  
