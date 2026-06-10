@@ -1,22 +1,65 @@
-# how to "connect" a local folder to a github repo
+# How to connect a local folder to a GitHub repository
 
-## step 1
+## Step 1: Create a local Git repository
 
-1. create a local folder
-2. open the folder in VS Code
-3. run git init in the terminal  
+1. Create a local folder.
+2. Open the folder in VS Code.
+3. Open a terminal.
+4. Run:
 
-## step 2
+```bash
+git init
+```
 
-1. create a repo in github
-2. copy the repo link
-3. in VS Code, run the following:
-   1. git remote add origin (paste the link here)  
-   2. git branch -M main
-   3. git push -u origin main
+This turns the folder into a Git repository.
 
-after the previous steps, the local folder and the remote repo have been "connected"
+---
 
-## step 3
+## Step 2: Create a GitHub repository
 
-do "commit and push" or other things in the "source control" panel of VS Code  
+1. Create a repository on GitHub.
+2. Copy the repository URL.
+3. In VS Code, run:
+
+```bash
+git remote add origin <repository-url>
+```
+
+Example:
+
+```bash
+git remote add origin https://github.com/username/book-service-mvp.git
+```
+
+This connects the local repository to the GitHub repository.
+
+---
+
+## Step 3: Make the first commit and push
+
+Create at least one file (for example, README.md), then run:
+
+```bash
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
+```
+
+This uploads the local repository to GitHub and sets up the tracking relationship.
+
+---
+
+## Step 4: Continue development
+
+After the initial setup, most day-to-day work can be done through the VS Code Source Control panel:
+
+1. Make changes.
+2. Commit changes.
+3. Push changes to GitHub.
+
+Typical workflow:
+
+```text
+Edit → Commit → Push
+```  
